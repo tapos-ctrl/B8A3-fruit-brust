@@ -39,7 +39,15 @@
             }
         }
     </script>
+    <style>
+        #cart-one,
+        #cart-two,
+        #cart-three,
+        #cart-for {
+            display: none;
 
+        }
+    </style>
 </head>
 
 <body style="font-family: 'Lato', sans-serif">
@@ -228,8 +236,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
-                <div id="cart" class="text-center  px-20 py-12">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 relative ">
+                <div class="text-center  px-20 py-12">
                     <div class="flex justify-center">
                         <img src="./images/fruit6.png" alt="">
                     </div>
@@ -243,10 +251,29 @@
                         <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
                     </div>
                     <div class="">
-                        <button>click me</button>
+                        <button onclick="productOne('cart-one')" class="text-btn-bg">Details</button>
                     </div>
                 </div>
-                <div id="cart" class="text-center  px-20 py-12">
+                <div  id="cart-one"
+                    class="text-center  absolute bg-[#FFFFFF] border-[5px] rounded-lg top-24 z-50 px-20 py-12 transform lg:left-1/3 lg:w-1/3 ">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit6.png" alt="">
+                    </div>
+                    <h1 class="text-2xl text-primary-text font-bold my-7">12.90$ - 18.85$</h1>
+                    <p class="text-secondary-text">Apples</p>
+                    <div class="rating rating-md my-3">
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
+                    </div>
+                    <div class="">
+                        <button class="btn bg-btn-bg text-white hover:text-black">Close</button>
+                        <button  class="btn bg-btn-bg text-white hover:text-black">By Now</button>
+                    </div>
+                </div>
+                <div class="text-center  px-20 py-12">
                     <div class="flex justify-center">
                         <img src="./images/fruit7.png" alt="">
                     </div>
@@ -260,10 +287,29 @@
                         <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
                     </div>
                     <div class="">
-                        <button>click me</button>
+                        <button onclick="productTwo('cart-two')" class="text-btn-bg">Details</button>
                     </div>
                 </div>
-                <div id="cart" class="text-center  px-20 py-12">
+                <div id="cart-two"
+                    class="text-center  absolute bg-[#FFFFFF] border-[5px] rounded-lg top-24 z-50 px-20 py-12 transform lg:left-1/3 lg:w-1/3">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit7.png" alt="">
+                    </div>
+                    <h1 class="text-2xl text-primary-text font-bold my-7">12.90$ - 18.85$</h1>
+                    <p class="text-secondary-text">Apples</p>
+                    <div class="rating rating-md my-3">
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
+                    </div>
+                    <div class="">
+                        <button class="btn bg-btn-bg text-white hover:text-black">Close</button>
+                        <button class="btn bg-btn-bg text-white hover:text-black">Buy Now</button>
+                    </div>
+                </div>
+                <div class="text-center  px-20 py-12">
                     <div class="flex justify-center">
                         <img src="./images/fruit8.png" alt="">
                     </div>
@@ -277,12 +323,13 @@
                         <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
                     </div>
                     <div class="">
-                        <button>click me</button>
+                        <button onclick="productThree('cart-three')" class="text-btn-bg">Details</button>
                     </div>
                 </div>
-                <div id="cart" class="text-center  px-20 py-12">
+                <div id="cart-three"
+                    class="text-center  absolute bg-[#FFFFFF] border-[5px] rounded-lg top-24 z-50 px-20 py-12 transform lg:left-1/3 lg:w-1/3">
                     <div class="flex justify-center">
-                        <img src="./images/fruit9.png" alt="">
+                        <img src="./images/fruit8.png" alt="">
                     </div>
                     <h1 class="text-2xl text-primary-text font-bold my-7">12.90$ - 18.85$</h1>
                     <p class="text-secondary-text">Apples</p>
@@ -294,11 +341,48 @@
                         <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
                     </div>
                     <div class="">
-                        <button>click me</button>
+                        <button class="btn bg-btn-bg text-white hover:text-black">Close </button>
+                        <button class="btn bg-btn-bg text-white hover:text-black">Buy Now</button>
+                    </div>
+                </div>
+                <div class="text-center  px-20 py-12">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit9.png" alt="">
                     </div>
 
+                    <h1 class="text-2xl text-primary-text font-bold my-7">12.90$ - 18.85$</h1>
+                    <p class="text-secondary-text">Apples</p>
+                    <div class="rating rating-md my-3">
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
+                    </div>
+                    <div class="">
+                        <button onclick="productFor('cart-for')" class="text-btn-bg">Details</button>
+                    </div>
                 </div>
+                <div id="cart-for"
+                    class="text-center  absolute bg-[#FFFFFF] border-[5px] rounded-lg top-24 z-50 px-20 py-12 transform lg:left-1/3 lg:w-1/3">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit9.png" alt="">
+                    </div>
 
+                    <h1 class="text-2xl text-primary-text font-bold my-7">12.90$ - 18.85$</h1>
+                    <p class="text-secondary-text">Apples</p>
+                    <div class="rating rating-md my-3">
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" />
+                        <input type="radio" name="rating-7" class="mask mask-star-2 bg-btn-bg" checked />
+                    </div>
+                    <div class="">
+                        <button class="btn bg-btn-bg text-white hover:text-black">Close</button>
+                        <button class="btn bg-btn-bg text-white hover:text-black">Buy Now</button>
+                    </div>
+                </div>
             </div>
             <div class="flex justify-center lg:mb-32 mb-7 ">
                 <button class="btn bg-btn-bg text-white hover:text-black hover:border-btn-bg normal-case">Shop
@@ -478,7 +562,8 @@
             <div class="footer footer-center p-10 text-primary-content ">
                 <aside>
                     <div class="flex">
-                        <a href="" class="flex items-center gap-4 text-lg lg:text-4xl"><img src="./images/logo.png" alt="">Fruit Burst</a>
+                        <a href="" class="flex items-center gap-4 text-lg lg:text-4xl"><img src="./images/logo.png"
+                                alt="">Fruit Burst</a>
                     </div>
                 </aside>
                 <nav>
@@ -491,17 +576,18 @@
                         <a href="">My Account</a>
                     </ul>
                 </nav>
-                <div class=" flex lg:gap-10 gap-6 flex-wrap">
-                    <a href=""><img src="./images/twitter 1.png" alt=""></a>
-                    <a href=""><img src="./images/facebook 1.png" alt=""></a>
-                    <a href=""><img src="./images/Group 49.png" alt=""></a>
-                    <a href=""><img src="./images/linkedin 1.png" alt=""></a>
-                    <a href=""><img src="./images/instagram 1.png" alt=""></a>
-                    <a href=""><img src="./images/apple 1.png" alt=""></a>
+                <div class=" flex lg:gap-10 gap-6 flex-wrap justify-center">
+                    <a href=""><img src="./images/twitter 1.png" class="lg:w-full w-5" alt=""></a>
+                    <a href=""><img src="./images/facebook 1.png" class="lg:w-full w-5" alt=""></a>
+                    <a href=""><img src="./images/Group 49.png" class="lg:w-full w-5" alt=""></a>
+                    <a href=""><img src="./images/linkedin 1.png" class="lg:w-full w-5" alt=""></a>
+                    <a href=""><img src="./images/instagram 1.png" class="lg:w-full w-5" alt=""></a>
+                    <a href=""><img src="./images/apple 1.png" class="lg:w-full w-5" alt=""></a>
                 </div>
             </div>
         </section>
     </footer>
+    <script src="./showDetails.js"></script>
 </body>
 
 </html>
