@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- dasiyui link up  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css link up  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts link up -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awsome cnd  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind custom css  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body style="font-family: 'Lato', sans-serif">
+
+    <header class="container mx-auto lg:bg-[#F85559] md:bg-[#F85559] bg-white lg:my-9 md:my-9 my-5 rounded-full">
+        <nav>
+            <div class="navbar justify-between">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                    <a class=" normal-case text-4xl lg:text-white md:text-white text-[#121212] flex items-center gap-4"><img src="./images/logo.png "
+                            alt="">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    <div class=" lg:flex md:hidden hidden bg-white items-center px-5 rounded-full h-14">
+                        <input type="text" placeholder="Search here"
+                        class="input bg-transparent border-0 outline-none  p-0 focus:outline-none" />
+                        <i class="fa-solid fa-magnifying-glass text-[#121212]"></i>
+                    </div>
+                    <div class="dropdown justify-between">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <!-- <ul tabindex="0"
+                            class="menu menu-sm dropdown-content  z-[1]  shadow bg-base-100 rounded-box ">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
